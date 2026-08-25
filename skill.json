@@ -1,0 +1,38 @@
+{
+  "name": "genpark-web-grounded-source-cited-search-answer-synthesizer-skill",
+  "version": "1.0.0",
+  "description": "GenPark AI Agent Skill - Real-time web-grounded neural search synthesizer providing inline source citations, hallucination-free factual answers, and follow-up discoveries.",
+  "author": "genpark",
+  "category": "search-engine",
+  "tags": [
+    "grounded-search",
+    "inline-citations",
+    "live-web-rag",
+    "factual-synthesis",
+    "perplexity-ai"
+  ],
+  "inputs": {
+    "search_prompt": {
+      "type": "string"
+    },
+    "recency_filter": {
+      "type": "string"
+    }
+  },
+  "outputs": {
+    "search_session_id": {
+      "type": "string"
+    },
+    "live_web_domains_crawled_count": {
+      "type": "integer"
+    },
+    "groundedness_faithfulness_score_pct": {
+      "type": "number"
+    },
+    "inline_academic_source_citations": {
+      "type": "array"
+    }
+  },
+  "entrypoint": "client.py",
+  "example": "example_usage.py"
+}
